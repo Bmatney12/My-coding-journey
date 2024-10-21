@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamins first website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        main {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            background: #fff;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            margin-top: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        form div {
+            margin-bottom: 1rem;
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+        }
+        form textarea {
+            overflow: hidden;
+            resize: none;
+        }
+        form button {
+            padding: 0.5rem 1rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Benjamins first website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main id="home">
+        <div class="container">
+            <h2>Challenges making my first website</h2>
+            <p>
+                <ol>
+                    <li>Understanding HTML structure</li>
+                    <li>Learning CSS for styling</li>
+                    <li>Making the website responsive</li>
+                    <li>Adding interactivity with JavaScript</li>
+                </ol> 
+                <h3>What my goal is while doing this.</h3>
+                <ol>
+                    <li>Understand the basics of web development</li>
+                    <li>Learn how to create a website from scratch</li>
+                    <li>Get a job as a web developer</li>
+                    <li>Build a portfolio of projects</li>
+                </ol>
+                <img src="images/your-image.jpg" alt="A picture of a cat">
+            </p>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <form action="https://example.com/submit-form" method="post">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+    <script>
+        // JavaScript to auto-adjust the height of the textarea
+        const textarea = document.getElementById('message');
+        textarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+        });
+    </script>
+</body>
+</html>
