@@ -30,7 +30,7 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            color:aqua
+            color:purple
         }
         footer {
             background: #333;
@@ -70,10 +70,11 @@
             padding: 0.5rem 1rem;
             background: #333;
             color: #fff;
-            border: none;
+            border: brown;
             cursor: pointer;
         }
         form button:hover {
             background: #555;
             
         }
+       
